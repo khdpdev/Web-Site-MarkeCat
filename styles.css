@@ -5,12 +5,19 @@ html, body, main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    position: relative;
+}
+
 .navbar {
     width: 100%;
-    background-color: #000;
+    position: absolute;
     display: flex;
-    padding: 0.7rem;
-    justify-content: space-around;
+    padding: 0 40px;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -21,13 +28,12 @@ html, body, main {
 .pages {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     font-size: 16px;
 }
 
 .btn-hablemos {
-    background-color: rgb(255, 215, 0);
-    margin-left: 1.8em;
+    background-color: rgb(255, 229, 0);
     border: 0;
     padding: 0.9em 1.2em;
     font-size: 1rem;
@@ -40,7 +46,7 @@ html, body, main {
 
 .btn-hablemos:hover {
     padding-right: 2em;
-    background-color: rgb(250, 110, 80);
+    background-color: rgb(250, 170, 100);
 }
 
 .btn-hablemos::after {
@@ -67,7 +73,7 @@ html, body, main {
     display: inline-block;
     position: absolute;
     width: 100%;
-    height: 0.2em;
+    height: 0.1rem;
     top: 15px;
     border-radius: 10px;
     background-color: rgba(255, 215, 0, 0);
@@ -78,7 +84,7 @@ html, body, main {
 .pages-navbar:hover::after {
     width: 100%;
     top: 20px;
-    background-color: rgba(255, 215, 0, 1);
+    background-color: rgba(255, 229, 0, 1);
 }
 
 
@@ -90,21 +96,27 @@ header {
     background: url(./img/hero-background/Elemento\ Hero\ MarkeCat.com_20260127_222626_0000.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position-x: 80%;
     height: 100vh;
     padding: 0.2rem;
     color: #fff;
-    font-size: 1.8rem;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .yellow {
-    color: rgb(255, 215, 0);
+    color: rgb(255, 229, 0);
 }
 
 .hero h1 {
     margin: 25vh 0 0;
+    font-size: 4rem;
+}
+
+.hero p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .hero button {
