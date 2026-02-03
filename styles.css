@@ -1,0 +1,9 @@
+    .hero {
+        color: #fff;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://cdn.wallpapersafari.com/73/95/x5jghF.jpg);
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
