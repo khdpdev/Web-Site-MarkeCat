@@ -46,7 +46,6 @@ html, body, main {
 .btn-hablemos::after {
     content: " >";
     position: absolute;
-    overflow: hidden;
     color: transparent;
     margin-left: 8px;
     transition: color 0.2s ease-out;
@@ -57,13 +56,13 @@ html, body, main {
     color: #000;
 }
 
-.pages-header {
+.pages-navbar {
     text-decoration: none;
     color: #fff;
     position: relative;
 }
 
-.pages-header::after {
+.pages-navbar::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -76,8 +75,38 @@ html, body, main {
     transition: all 0.2s ease-in-out;
 }
 
-.pages-header:hover::after {
+.pages-navbar:hover::after {
     width: 100%;
     top: 20px;
     background-color: rgba(255, 215, 0, 1);
+}
+
+
+header {
+    background-color: #000;
+}
+
+.hero {
+    background: url(./img/hero-background/Elemento\ Hero\ MarkeCat.com_20260127_222626_0000.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100vh;
+    padding: 0.2rem;
+    color: #fff;
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.yellow {
+    color: rgb(255, 215, 0);
+}
+
+.hero h1 {
+    margin: 25vh 0 0;
+}
+
+.hero button {
+    margin: 0;
 }
