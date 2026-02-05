@@ -3,12 +3,28 @@ html, body {
     padding: 0;
 }
 
+:root {
+    --primary: rgb(250, 229, 0);
+    --primary-dark: rgb(255, 129, 0);
+    --secondary: rgb(253, 183, 0);
+    --secondary-dark: rgb(254, 168, 0);
+    --white: #fff;
+    --white2: #f5f9fa;
+    --black: #221f1f;
+    --black2: #2a2b2b;
+    --blue: #0022ee;
+}
+
 body {
     position: relative;
 }
 
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -116,7 +132,6 @@ header {
 }
 
 .hero p {
-    font-family: Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
 }
